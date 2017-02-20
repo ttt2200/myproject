@@ -65,6 +65,8 @@ public class MapCreater : EditorWindow {
 		EditorGUILayout.Space();
 
 		DrawImageParts();
+
+		DrawSelectedImage();
 	}
 
 	// 画像一覧をボタン選択出来る形にして出力
@@ -103,6 +105,21 @@ public class MapCreater : EditorWindow {
 				x += w;
 			}
 			EditorGUILayout.EndVertical();
+		}
+	}
+
+	// 選択した画像データを表示
+	private void DrawSelectedImage()
+	{
+		if (selectedImagePath != null)
+		{
+			Texture2D tex = (Texture2D)AssetDatabase.LoadAssetAtPath(selectedImagePath, typeof(Texture2D));
+			EditorGUILayout.BeginVertical();
+			GUILayout.FlexibleSpace();
+			GUILayout.Label("select : " + selectedImagePath);
+			GUILayout.Box(tex);
+			EditorGUILayout.EndVertical();
+
 		}
 	}
 }
