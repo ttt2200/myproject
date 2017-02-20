@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 992aa93ff8c5aa548b28440a39bb3198
+timeCreated: 1485929304
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - FOT-KafuTechno Std
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 00d7cc6af9cef2d429c61a3120804f12, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
